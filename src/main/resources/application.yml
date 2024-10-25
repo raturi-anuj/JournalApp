@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: journaldb
+      auto-index-creation: true
+
+  main:
+    allow-circular-reference: true
+
+logging:
+  level:
+    org:
+      mongodb:
+        driver: ERROR
+
+server:
+  port: 8081
